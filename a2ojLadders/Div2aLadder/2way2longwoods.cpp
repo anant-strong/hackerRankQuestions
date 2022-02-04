@@ -22,11 +22,11 @@ int main()
     first = &(a[0]);     //memory address of char of index 0 in a is being stored
 
     char *last;
-    last = &(a[b]);   //memory address of char of index 0 in a is being stored
+    last = &(a[b-1]);   //memory address of char of index b-1 in a is being stored
 
     if(b>10)
     {
-        cout << *first << b - 2 << *last;
+        cout << *first << b - 2 << *last << endl;
     }
     else
     {
