@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int ans = 0;
+    int n;
+    cin >> n;
+
+    while(n){
+        int d = n % 10;
+        if((ans>(INT_MAX/10))||(ans<(INT_MIN/10))){
+            return 0;
+        }
+        ans = ans * 10 + d;
+        n = n/10;
+    }
+    cout << ans;
+    return 0;
+}
