@@ -19,7 +19,7 @@ int main()
         if(d>a){
             count++;
         }
-        cout << count;
+        cout << count<< endl;
 
     }
     return 0;
